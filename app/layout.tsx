@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { SiteNav } from '../components/SiteNav'
 
 export const metadata: Metadata = {
   title: 'Luma Atelier, Photo Studio',
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <body>
+        <div className="top-chrome" aria-hidden="true" />
+        <SiteNav />
+        {children}
+      </body>
     </html>
   )
 }

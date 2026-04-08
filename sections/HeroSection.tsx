@@ -1,38 +1,39 @@
+'use client'
+
 export function HeroSection() {
   return (
-    <section className="section hero-grid">
-      <div>
-        <span className="eyebrow">Granite mood • warm studio light • Moscow</span>
-        <h1 className="hero-title">Тёплый свет, тёмный гранит, кадры с уютной глубиной.</h1>
+    <section className="section hero-grid hero-shell">
+      <div className="hero-copy-column">
+        <span className="eyebrow">Фотостудия на Тверской • мягкий свет • современная подача</span>
+        <h1 className="hero-title">Luma Atelier</h1>
         <p className="hero-copy">
-          Фотостудия на Тверской с комфортным вайбом, современным стилем и визуалом, который работает на тебя.
-          Мягкий ламповый свет, фактурное пространство и подача, которая одинаково хорошо работает для людей, брендов и контента.
+          Фотостудия для портретов, брендов и визуала с тёплым светом, фактурным интерьером и спокойной атмосферой.
         </p>
         <div className="actions">
-          <a className="button primary" href="#booking">Забронировать съёмку</a>
-          <a className="button secondary" href="#portfolio">Смотреть портфолио</a>
+          <a className="button primary" href="/booking">Забронировать съёмку</a>
+          <a className="button secondary" href="/portfolio">Смотреть портфолио</a>
         </div>
-        <div className="stat-row">
-          <div className="card">
-            <h3>Granite</h3>
-            <p>глубокая тёмно-серая база с дорогой фактурой и спокойным контрастом</p>
+        <div className="hero-feature-row">
+          <div className="glass-card mini">
+            <span className="service-note">формат</span>
+            <h3>Портреты и lifestyle</h3>
+            <p>Для личных съёмок, парных кадров и визуала с мягким светом и спокойной атмосферой.</p>
           </div>
-          <div className="card">
-            <h3>Warm light</h3>
-            <p>тёплые ламповые акценты, как отражения от студийных источников света</p>
-          </div>
-          <div className="card">
-            <h3>Modern comfort</h3>
-            <p>современный дизайн без холода, с ощущением уюта и визуального воздуха</p>
+          <div className="glass-card mini">
+            <span className="service-note">для брендов</span>
+            <h3>Контент, который выглядит дороже</h3>
+            <p>Для экспертов, брендов и продуктов, которым нужен современный визуал и доверительный вайб.</p>
           </div>
         </div>
       </div>
-      <div className="scene-card">
-        <div className="ring" />
-        <div className="orb" />
-        <div className="scene-label">
-          <span>granite + tungsten mood</span>
-          <span>warm reflections • soft glow</span>
+      <div className="scene-card hero-visual hero-photo-shell hero-beacon-scene">
+        <div className="hero-photo-layer" style={{ backgroundImage: "url('/images/hero-reference.jpg')" }} />
+        <div className="hero-scene-vignette" />
+        <div className="hero-beacon-wrap is-state-0">
+          <div className="ring beacon-ring" />
+          <div className="orb beacon-orb" />
+          <div className="beacon-pulse" />
+          <div className="beacon-aura" />
         </div>
       </div>
     </section>

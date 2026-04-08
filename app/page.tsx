@@ -10,7 +10,6 @@ export default function HomePage() {
       <HeroSection />
       <ServicesSection />
       <PortfolioSection />
-      <PricingSection />
       <BookingSection />
     </main>
   )

@@ -1,34 +1,35 @@
 const tiers = [
   {
-    name: 'Start',
+    name: 'Старт',
     price: '12 000₽',
-    points: ['1 hour in studio', 'moodboard alignment', '10 edited photos'],
+    points: ['1 час в студии', 'согласование настроения съёмки', '10 обработанных кадров'],
   },
   {
-    name: 'Signature',
+    name: 'Сигнатурный',
     price: '24 000₽',
-    points: ['2.5 hours', 'creative direction', '25 edited photos'],
+    points: ['2.5 часа', 'креативное направление', '25 обработанных кадров'],
     featured: true,
   },
   {
-    name: 'Campaign',
-    price: 'from 45 000₽',
-    points: ['brand-oriented shoot', 'team workflow', 'custom production scope'],
+    name: 'Кампания',
+    price: 'от 45 000₽',
+    points: ['съёмка под бренд-задачу', 'работа с командой', 'индивидуальный объём продакшена'],
   },
 ]
 
 export function PricingSection() {
   return (
     <section className="section" id="pricing">
-      <span className="eyebrow">Pricing</span>
-      <h2 className="section-title">Простой прайс, который ощущается как premium service.</h2>
+      <span className="eyebrow">Стоимость</span>
+      <h2 className="section-title">Прайс, который выглядит понятно и ощущается как хороший сервис.</h2>
       <p className="section-copy">
         Без лишнего шума. На уровне лендинга лучше показать аккуратную, уверенную структуру, чем перегрузить.
       </p>
+      <p className="footer-note">В стоимость уже заложены подготовка по настроению, работа со светом и базовая ретушь.</p>
       <div className="price-grid">
         {tiers.map((tier) => (
           <article key={tier.name} className={`price-card ${tier.featured ? 'featured' : ''}`}>
-            <span className="service-note">{tier.featured ? 'most requested' : 'studio plan'}</span>
+            <span className="service-note">{tier.featured ? 'самый частый выбор' : 'формат студии'}</span>
             <h3>{tier.name}</h3>
             <div className="price">{tier.price}</div>
             <ul className="muted-list">

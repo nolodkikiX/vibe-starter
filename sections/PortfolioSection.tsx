@@ -1,15 +1,15 @@
 const items = [
-  'Editorial Portrait',
-  'Fashion Detail',
-  'Brand Campaign',
-  'Studio Light Test',
-  'Creative Motion',
+  'Редакционный портрет',
+  'Детали fashion-съёмки',
+  'Кампания для бренда',
+  'Тест света в студии',
+  'Пластика и движение',
 ]
 
 export function PortfolioSection() {
   return (
     <section className="section" id="portfolio">
-      <span className="eyebrow">Portfolio</span>
+      <span className="eyebrow">Портфолио</span>
       <h2 className="section-title">Кадры, в которых свет ощущается почти физически.</h2>
       <p className="section-copy">
         Здесь пока мокап-сетка, но уже с настроением: крупная типографика, тёплые рефлексы и ощущение
@@ -17,10 +17,11 @@ export function PortfolioSection() {
       </p>
       <div className="portfolio-grid">
         {items.map((item, index) => (
-          <article key={item} className={`portfolio-card ${index === 0 ? 'large' : ''}`}>
+          <article key={item} className={`portfolio-card ${index === 0 ? 'large hero-case liquid-frame' : ''}`}>
             <div className="portfolio-overlay" />
+            {index === 0 ? <div className="portfolio-depth" /> : null}
             <div className="portfolio-meta">
-              <small>studio series</small>
+              <small>{index === 0 ? 'ключевой кейс' : 'серия студии'}</small>
               <span>{item}</span>
             </div>
           </article>
