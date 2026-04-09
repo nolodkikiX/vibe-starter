@@ -77,6 +77,10 @@ body::before {
   margin-top: 6px;
 }
 
+.page-intro-copy {
+  max-width: 760px;
+}
+
 .section {
   position: relative;
   overflow: hidden;
@@ -100,9 +104,9 @@ body::before {
 }
 
 .section-title {
-  margin: 0 0 10px;
-  font-size: clamp(28px, 4vw, 48px);
-  line-height: 0.95;
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 50px);
+  line-height: 1.02;
   letter-spacing: -0.03em;
 }
 
@@ -120,8 +124,9 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 14px 18px;
+  gap: 28px;
+  min-height: 74px;
+  padding: 14px 32px;
   border-radius: 999px;
   background:
     linear-gradient(
@@ -163,7 +168,12 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  flex-shrink: 0;
   text-decoration: none;
+}
+
+.site-nav nav {
+  margin-left: auto;
 }
 
 .brand-line {
@@ -181,17 +191,28 @@ body::before {
 .site-nav-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 8px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .site-nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 999px;
   text-decoration: none;
   color: #ddd0c3;
   font-size: 14px;
   opacity: 0.88;
+  transition: background 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+}
+
+.site-nav-links a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 1;
 }
 
 .site-nav-shell.is-top .site-nav-links a,
@@ -285,7 +306,8 @@ body::before {
   max-width: 680px;
   margin: 0;
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.72;
 }
 
 .hero-grid,
@@ -328,10 +350,10 @@ body::before {
 }
 
 .hero-copy {
-  max-width: 620px;
+  max-width: 640px;
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 19px;
+  line-height: 1.72;
 }
 
 .actions {
@@ -460,6 +482,8 @@ body::before {
 .price-card h3 {
   margin: 10px 0 10px;
   font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .card p,
@@ -907,6 +931,8 @@ body::before {
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+    min-height: auto;
+    padding: 14px 24px;
     border-radius: 28px;
   }
 
@@ -914,9 +940,14 @@ body::before {
     border-radius: 28px;
   }
 
+  .site-nav nav {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .site-nav-links {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
   }
 
   .portfolio-card.large {
@@ -987,7 +1018,7 @@ body::before {
   }
 
   .site-nav {
-    padding: 12px 14px;
+    padding: 12px 18px;
     gap: 12px;
     border-radius: 20px;
   }
@@ -1035,8 +1066,8 @@ body::before {
   }
 
   .hero-copy {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.65;
   }
 
   .actions {
@@ -1093,6 +1124,7 @@ body::before {
   .portfolio-proof-main h2,
   .section-title {
     font-size: clamp(26px, 8vw, 36px);
+    line-height: 1.06;
   }
 
   .about-photo-banner {

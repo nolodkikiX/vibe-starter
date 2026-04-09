@@ -7,7 +7,7 @@ export default function BookingPage() {
       <section className="section page-intro">
         <span className="eyebrow">Бронирование</span>
         <h1 className="section-title">Понятный путь от идеи съёмки до подтверждённой даты.</h1>
-        <p className="section-copy">
+        <p className="section-copy page-intro-copy">
           Здесь собраны форматы, базовая стоимость и самый быстрый способ выйти на спокойный рабочий диалог по
           съёмке, бренду или контенту.
         </p>

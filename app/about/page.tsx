@@ -4,7 +4,7 @@ export default function AboutPage() {
       <section className="section page-intro">
         <span className="eyebrow">О студии</span>
         <h1 className="section-title">Студия с тёплым светом, фактурным интерьером и спокойным процессом съёмки.</h1>
-        <p className="section-copy">
+        <p className="section-copy page-intro-copy">
           Luma Atelier строится вокруг атмосферы, в которой клиенту легко расслабиться, а команде легко собрать
           сильный кадр. Здесь важны не только техника и свет, но и ощущение комфорта, темп и визуальная цельность.
         </p>
@@ -16,7 +16,7 @@ export default function AboutPage() {
         <article className="card">
           <span className="service-note">подход</span>
           <h3>Сначала настроение, потом кадр</h3>
-          <p>Мы собираем свет, фактуру и pacing так, чтобы съёмка ощущалась уверенно, а результат выглядел цельно.</p>
+          <p>Мы собираем свет, фактуру и темп так, чтобы съёмка ощущалась уверенно, а результат выглядел цельно.</p>
         </article>
         <article className="card">
           <span className="service-note">пространство</span>

@@ -4,10 +4,10 @@ export function HeroSection() {
   return (
     <section className="section hero-grid hero-shell">
       <div className="hero-copy-column">
-        <span className="eyebrow">Фотостудия на Тверской • мягкий свет • современная подача</span>
+        <span className="eyebrow">Тверская, Москва • мягкий свет • спокойный продакшн</span>
         <h1 className="hero-title">Luma Atelier</h1>
         <p className="hero-copy">
-          Фотостудия для портретов, брендов и визуала с тёплым светом, фактурным интерьером и спокойной атмосферой.
+          Фотостудия для портретов, брендов и визуала с тёплым светом, фактурным интерьером и уверенной, спокойной подачей.
         </p>
         <div className="actions">
           <a className="button primary" href="/booking">Забронировать съёмку</a>
@@ -17,12 +17,12 @@ export function HeroSection() {
           <div className="glass-card mini">
             <span className="service-note">формат</span>
             <h3>Портреты и lifestyle</h3>
-            <p>Для личных съёмок, парных кадров и визуала с мягким светом и спокойной атмосферой.</p>
+            <p>Личные съёмки, парные кадры и визуал, в котором человек выглядит естественно и собранно.</p>
           </div>
           <div className="glass-card mini">
             <span className="service-note">для брендов</span>
             <h3>Контент, который выглядит дороже</h3>
-            <p>Для экспертов, брендов и продуктов, которым нужен современный визуал и доверительный вайб.</p>
+            <p>Для экспертов, брендов и продуктов, которым нужен современный визуал с ощущением доверия.</p>
           </div>
         </div>
       </div>
